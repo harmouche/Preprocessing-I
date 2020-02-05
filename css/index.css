@@ -134,3 +134,20 @@ html,
 body {
   height: 100%;
 }
+header {
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  width: 100vw;
+  background: skyblue;
+  justify-content: space-around;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  background: red;
+}
+header a {
+  text-decoration: none;
+  color: grey;
+}
