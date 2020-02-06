@@ -134,6 +134,13 @@ html,
 body {
   height: 100%;
 }
+.box-style {
+  width: 70vw;
+  border: 1px solid lightgrey;
+  box-sizing: border-box;
+  background-color: beige;
+  justify-content: left;
+}
 header {
   display: flex;
   height: 10vh;
@@ -141,13 +148,42 @@ header {
   width: 100vw;
   background: skyblue;
   justify-content: space-around;
+  color: grey;
 }
-header nav {
+h1 {
+  font-size: 2rem;
+  font-weight: 5px;
+  color: grey;
+  width: 30vw;
+}
+.container nav {
   display: flex;
   justify-content: space-around;
-  background: red;
+  width: 60vw;
 }
-header a {
+.container nav a {
   text-decoration: none;
   color: grey;
+}
+.qualifications {
+  background: lightgreen;
+  width: 70vw;
+}
+.education {
+  width: 70vw;
+  border: 1px solid lightgrey;
+  box-sizing: border-box;
+  background-color: beige;
+  justify-content: left;
+}
+.experience {
+  width: 70vw;
+  border: 1px solid lightgrey;
+  box-sizing: border-box;
+  background-color: beige;
+  justify-content: left;
+}
+.date {
+  font-weight: 5rem;
+  font-size: 1.5rem;
 }
