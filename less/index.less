@@ -74,18 +74,16 @@ html, body {
 	box-sizing: border-box;
 	background-color: beige;
 	justify-content: @content-justify;
+	padding: 5%;
+	margin: auto;
 }
-
-
-
 
 header {
 	display: flex;
 	height: 10vh;
 	align-items: center;
-	width: 100vw;
+	width: @content-width + @sidebar-width;
 	background: skyblue;
-	justify-content: space-around;
 	color: @font-color;
 }
 
@@ -93,43 +91,48 @@ header {
 		font-size: 2rem;
 		font-weight: 5px;
 		color: @font-color;
-		width: 30vw;
+		width: 25vw;
 		}
 
 
-	.container nav {
+	header {
+		justify-items: center;
+		margin: 0 5vw;
+
+	 nav {
 		display: flex;
 		justify-content: space-around;
 		// background-color: yellowgreen;
-		width: 60vw;
+		width: @content-width;
 	
 		a {
 		text-decoration: none;
 		color: @font-color
 		}
+	  }	
 	}
-	// h1{
-	// 	font-size: 2rem;
-	// 	font-weight: 5px;
-	// 	color: @font-color;
-	// 	}
 
-// 	div {
-// 		display: flex;
-// 		justify-content: space-around;
-// 		background-color: yellowgreen;
-	
 
-// 	a {
-// 		text-decoration: none;
-// 		color: @font-color
-// 	}
-// 	}
+.content {
+	display: flex;
+	flex-direction: row;
+	justify-items: center;
+	justify-content: center;
+}
 
+.details {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid red;
+	flex-wrap: wrap;
+	width: @content-width;
+}
 
 .qualifications {
 	background: lightgreen;
 	width: @content-width;
+	padding: 5%;
+	margin: auto;
 }
 
 .education{
@@ -151,7 +154,12 @@ header {
 	flex-wrap: wrap;
 	flex-direction: column;
 	box-sizing: border-box;
-	width: 30%;
-	height: 100%;
+	width: @sidebar-width;
+	height: auto;
 	background-color: yellow;
+	
+	nav {
+		display: flex;
+		flex-direction: column;
+	}
 }

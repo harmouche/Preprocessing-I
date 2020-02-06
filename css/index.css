@@ -140,34 +140,54 @@ body {
   box-sizing: border-box;
   background-color: beige;
   justify-content: left;
+  padding: 5%;
+  margin: auto;
 }
 header {
   display: flex;
   height: 10vh;
   align-items: center;
-  width: 100vw;
+  width: 90vw;
   background: skyblue;
-  justify-content: space-around;
   color: grey;
 }
 h1 {
   font-size: 2rem;
   font-weight: 5px;
   color: grey;
-  width: 30vw;
+  width: 25vw;
 }
-.container nav {
+header {
+  justify-items: center;
+  margin: 0 5vw;
+}
+header nav {
   display: flex;
   justify-content: space-around;
-  width: 60vw;
+  width: 70vw;
 }
-.container nav a {
+header nav a {
   text-decoration: none;
   color: grey;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: center;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  flex-wrap: wrap;
+  width: 70vw;
 }
 .qualifications {
   background: lightgreen;
   width: 70vw;
+  padding: 5%;
+  margin: auto;
 }
 .education {
   width: 70vw;
@@ -175,6 +195,8 @@ h1 {
   box-sizing: border-box;
   background-color: beige;
   justify-content: left;
+  padding: 5%;
+  margin: auto;
 }
 .experience {
   width: 70vw;
@@ -182,6 +204,8 @@ h1 {
   box-sizing: border-box;
   background-color: beige;
   justify-content: left;
+  padding: 5%;
+  margin: auto;
 }
 .date {
   font-weight: 5rem;
@@ -193,7 +217,11 @@ h1 {
   flex-wrap: wrap;
   flex-direction: column;
   box-sizing: border-box;
-  width: 30%;
-  height: 100%;
+  width: 20vw;
+  height: auto;
   background-color: yellow;
+}
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
 }
