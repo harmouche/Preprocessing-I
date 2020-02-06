@@ -187,3 +187,13 @@ h1 {
   font-weight: 5rem;
   font-size: 1.5rem;
 }
+.sidebar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 30%;
+  height: 100%;
+  background-color: yellow;
+}
