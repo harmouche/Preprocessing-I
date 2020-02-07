@@ -134,20 +134,161 @@ html,
 body {
   height: 100%;
 }
+.box-style {
+  width: 80vw;
+  border: 1px solid lightgrey;
+  box-sizing: border-box;
+  background-color: beige;
+  justify-content: left;
+  padding: 5%;
+  margin: auto;
+}
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 3vh;
+}
+.job-title {
+  font-size: 1rem;
+  font-weight: bold;
+  padding-bottom: 3vh;
+}
+.company-name {
+  font-size: 1rem;
+  font-weight: bold;
+  font-style: italic;
+  padding-bottom: 3vh;
+}
 header {
   display: flex;
   height: 10vh;
   align-items: center;
-  width: 100vw;
+  width: auto;
   background: skyblue;
-  justify-content: space-around;
+  color: grey;
+  border-bottom: 1px solid lightgrey;
+  position: fixed;
+  top: 0;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: 5px;
+  color: grey;
+  width: 25vw;
+  padding-left: 5%;
+}
+header {
+  justify-items: center;
 }
 header nav {
   display: flex;
-  justify-content: space-around;
-  background: red;
+  justify-content: space-evenly;
+  width: 80vw;
 }
-header a {
+header nav a {
   text-decoration: none;
   color: grey;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: center;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 80vw;
+}
+.qualifications {
+  background: beige;
+  width: 80vw;
+  padding: 10vh 5%;
+  margin: auto;
+  margin-top: 5%;
+}
+.education {
+  width: 80vw;
+  border: 1px solid lightgrey;
+  box-sizing: border-box;
+  background-color: beige;
+  justify-content: left;
+  padding: 5%;
+  margin: auto;
+}
+.experience {
+  width: 80vw;
+  border: 1px solid lightgrey;
+  box-sizing: border-box;
+  background-color: beige;
+  justify-content: left;
+  padding: 5%;
+  margin: auto;
+}
+.date {
+  font-weight: 5rem;
+  font-size: 1.5rem;
+  padding-bottom: 5%;
+}
+.sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 20vw;
+  height: auto;
+  background-color: lightgrey;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 10vh;
+}
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar nav a {
+  text-decoration: none;
+  padding: 3vw;
+  color: grey;
+  border-bottom: 1px dotted lightgrey;
+  border-width: auto;
+}
+.sidebar #photo {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  padding: 1rem;
+}
+.sec-title {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 3vh;
+}
+.job {
+  font-size: 1rem;
+  font-weight: bold;
+  padding-bottom: 3vh;
+}
+.company {
+  font-size: 1rem;
+  font-weight: bold;
+  font-style: italic;
+  padding-bottom: 3vh;
+}
+p {
+  padding-bottom: 2vh;
+}
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+  h1 {
+    width: 100%;
+  }
+  .sidebar {
+    display: none;
+  }
 }
