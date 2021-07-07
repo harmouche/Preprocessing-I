@@ -54,6 +54,112 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	}
+
+// Styling starts here using LESS 
+
+// Variables
+@font-color: grey;
+@content-width: 80vw;
+@content-justify: left;
+@sidebar-width: 20vw;
+@sidebar-justify: center;
+
+// Mixins
+
+.box-style {
+	width: @content-width;
+	border: 1px solid lightgrey;
+	box-sizing: border-box;
+	background-color: beige;
+	justify-content: @content-justify;
+	padding: 5%;
+	margin: auto;
 }
 
+header {
+	display: flex;
+	height: 10vh;
+	align-items: center;
+	width: auto;
+	background: skyblue;
+	color: @font-color;
+}
+
+	h1{
+		font-size: 2rem;
+		font-weight: 5px;
+		color: @font-color;
+		width: 25vw;
+		}
+
+
+	header {
+		justify-items: center;
+		// margin: 0 5vw;
+
+	 nav {
+		display: flex;
+		justify-content: space-around;
+		// background-color: yellowgreen;
+		width: @content-width;
+	
+		a {
+		text-decoration: none;
+		color: @font-color
+		}
+	  }	
+	}
+
+
+.content {
+	display: flex;
+	flex-direction: row;
+	justify-items: center;
+	justify-content: center;
+}
+
+.details {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid red;
+	flex-wrap: wrap;
+	width: @content-width;
+}
+
+.qualifications {
+	background: lightgreen;
+	width: @content-width;
+	padding: 5%;
+	margin: auto;
+}
+
+.education{
+	.box-style
+}
+
+.experience {
+	.box-style
+}
+
+.date {
+	font-weight: 5rem;
+	font-size: 1.5rem;
+}
+
+.sidebar {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	box-sizing: border-box;
+	width: @sidebar-width;
+	height: auto;
+	background-color: yellow;
+	
+	nav {
+		display: flex;
+		flex-direction: column;
+	}
+}
