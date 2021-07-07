@@ -54,6 +54,192 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	}
+
+// Styling starts here using LESS 
+
+// Variables
+@font-color: grey;
+@content-width: 80vw;
+@content-justify: left;
+@sidebar-width: 20vw;
+@sidebar-justify: center;
+@header-height: 10vh;
+
+// Mixins
+
+.box-style {
+	width: @content-width;
+	border: 1px solid lightgrey;
+	box-sizing: border-box;
+	background-color: beige;
+	justify-content: @content-justify;
+	padding: 5%;
+	margin: auto;
 }
 
+.section-title {
+	font-size: 2rem;
+	font-weight: bold;
+	padding-bottom: 3vh;
+}
+
+.job-title {
+	font-size: 1rem;
+	font-weight: bold;
+	padding-bottom: 3vh;
+}
+
+.company-name {
+	font-size: 1rem;
+	font-weight: bold;
+	font-style: italic;
+	padding-bottom: 3vh;
+}
+
+// Content styling
+
+
+header {
+	display: flex;
+	height: @header-height;
+	align-items: center;
+	width: auto;
+	background: skyblue;
+	color: @font-color;
+	border-bottom: 1px solid lightgrey;
+	position: fixed;
+	top: 0;
+}
+
+	h1{
+		font-size: 2rem;
+		font-weight: 5px;
+		color: @font-color;
+		width: 25vw;
+		padding-left: 5%;
+		}
+
+
+	header {
+		justify-items: center;
+		// margin: 0 5vw;
+
+	 nav {
+		display: flex;
+		justify-content: space-evenly;
+		// background-color: yellowgreen;
+		width: @content-width;
+	
+		a {
+		text-decoration: none;
+		color: @font-color
+		}
+	  }	
+	}
+
+
+.content {
+	display: flex;
+	flex-direction: row;
+	justify-items: center;
+	justify-content: center;
+}
+
+.details {
+	display: flex;
+	flex-direction: column;
+	// border: 1px solid red;
+	flex-wrap: wrap;
+	width: @content-width;
+}
+
+.qualifications {
+	background: beige;
+	width: @content-width;
+	padding: @header-height 5%;
+	margin: auto;
+	margin-top: 5%;
+}
+
+.education{
+	.box-style
+}
+
+.experience {
+	.box-style
+}
+
+.date {
+	font-weight: 5rem;
+	font-size: 1.5rem;
+	padding-bottom: 5%;
+}
+
+.sidebar {
+	// position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	box-sizing: border-box;
+	width: @sidebar-width;
+	height: auto;
+	background-color: lightgrey;
+	align-items: center;
+	padding: 2rem;
+	margin-top: @header-height;
+	
+	nav {
+		display: flex;
+		flex-direction: column;
+		
+		a {
+			text-decoration: none;
+			padding: 3vw;
+			color: @font-color;
+			border-bottom: 1px dotted lightgrey;
+			border-width: auto;
+		} // anchor
+
+	} // nav
+	#photo {
+		width: 15vw;
+		height: 15vw;
+		border-radius: 50%;
+		padding: 1rem;
+	} //photo
+}
+
+.sec-title {
+	.section-title
+}
+
+
+.job {
+	.job-title
+}
+
+.company {
+	.company-name
+}
+
+p {
+	padding-bottom: 2vh;
+}
+
+@media (max-width: 500px) {
+	header {
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+	}
+
+	h1 {
+		width: 100%;
+	}
+
+	.sidebar {
+		display: none;
+	}
+}
